@@ -1,4 +1,5 @@
-AntiSpoofing
+# AntiSpoofing
+
 This Python-based real-time face classification system leverages a YOLOv8 deep learning model to distinguish between "real" and "fake" faces using webcam input. The project is built using OpenCV for image processing, Ultralytics YOLO for object detection, and the cvzone library for enhanced visual rendering of bounding boxes and text overlays.
 
 Upon launching the script, the webcam feed is captured, flipped horizontally for a mirror-like interface, and processed frame-by-frame. The YOLOv8 model (n_version_4_75.pt) is used to analyze each frame and detect faces. Once a face is detected, the model classifies it into one of two categories: "real" or "fake". Only detections above a defined confidence threshold (default is 0.6) are considered for visualization and feedback.
@@ -13,13 +14,25 @@ Built to be lightweight and responsive, this system is ideal for edge deployment
 
 To exit the system, users can press the 'q' key, at which point the webcam is released and all OpenCV windows are closed gracefully.
 
-Required installation:
 
+
+Required installation:
+```bash
 pip install mediapipe ultralytics cvzone
+```
 Also to run these codes with better effieiency from CPU to run on GPU, PyTorch locally can be used, check your compatibility and specifications and pip install it to the virtual environment: https://pytorch.org/get-started/locally/
 
 Create the Dataset folder too, with relavent folders shown inside !!
 
 File structure for reference:
 
-image
+
+![image](https://github.com/user-attachments/assets/49e432bb-ff9e-4c38-b6b4-9be2047fce88)
+
+
+
+
+
+
+
+
